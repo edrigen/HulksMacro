@@ -26,21 +26,16 @@
   text-decoration: none;
 }
 .banner-container {
-  width: 96%;             
-  max-width: 1200px;        
+  width: 96%;
+  max-width: 1200px;
   margin: 10px auto;
   border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 
   .banner-image {
     width: 100%;
     height: auto;
-    aspect-ratio: 21 / 7;   
-    object-fit: cover;
     display: block;
   }
 }
