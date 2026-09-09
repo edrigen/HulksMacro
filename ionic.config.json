@@ -1,0 +1,7 @@
+{
+  "name": "HulksMacro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

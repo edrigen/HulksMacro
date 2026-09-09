@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/catalog"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ product?.name || 'Product Details' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" *ngIf="product">
+  <ion-card class="detail-card">
+    <img [src]="product.imageUrl" [alt]="product.name" class="detail-img" />
+    <ion-card-header>
+      <ion-card-title>{{ product.name }}</ion-card-title>
+      <ion-card-subtitle class="price-tag">Php {{ product.price | number:'1.2-2' }}</ion-card-subtitle>
+      <ion-badge color="primary" *ngIf="product.protein" class="ion-margin-top">
+        Protein: {{ product.protein }}
+      </ion-badge>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Description:</strong></p>
+      <p>{{ product.description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

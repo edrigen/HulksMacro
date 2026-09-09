@@ -1,0 +1,25 @@
+:root {
+  /** Custom Green (#378923) **/
+  --ion-color-primary: #378923;
+  --ion-color-primary-rgb: 55, 137, 35;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #30791f;
+  --ion-color-primary-tint: #4b9539;
+
+  /** Dark Theme Backgrounds **/
+  --ion-background-color: #121212;
+  --ion-background-color-rgb: 18, 18, 18;
+
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
+
+  --ion-card-background: #1e1e1e;
+  --ion-item-background: #1e1e1e;
+  --ion-toolbar-background: #181818;
+  --ion-tab-bar-background: #181818;
+}
+
+ion-tab-button.tab-selected {
+  --color-selected: #378923;
+}

@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular/lazy';
+
+import { CatalogPageRoutingModule } from './catalog-routing.module';
+import { RouterModule } from '@angular/router';
+import { CatalogPage } from './catalog.page';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    CatalogPageRoutingModule,
+    RouterModule
+  ],
+  declarations: [CatalogPage]
+})
+export class CatalogPageModule {}

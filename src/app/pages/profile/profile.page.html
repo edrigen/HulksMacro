@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Student Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="avatar-container">
+    <ion-avatar class="profile-avatar">
+      <img src="assets/images/gwapo.jpg" alt="Student Avatar" />
+    </ion-avatar>
+  </div>
+
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>
+        <p>Name</p>
+        <h2>{{ profile.name }}</h2>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Username</p>
+        <h2>{{ profile.username }}</h2>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Email</p>
+        <h2>{{ profile.email }}</h2>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <p>Address</p>
+        <h2>{{ profile.address }}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
